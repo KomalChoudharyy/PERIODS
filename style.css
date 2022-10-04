@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background: #000;
+    height: 80px;
+    line-height: 100%;
+    margin-right: -1px;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+     margin-right: 20px;   
+     margin-left: 0px;
+     margin-top: -1px; 
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.MenstrualAwareness,a:hover{
+    background: #f1f5ed;
+    color:#000;
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float:right;
+    line-height: 80px;
+ 
+    margin-right: -72px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+.box{
+    margin: 0;
+    margin-top: 39px;
+    margin-left: 325px;
+    margin-right: 339px;
+}
+
+.gip{
+ 
+    margin-right: 119px;
+    margin-top: 25px;
+    text-align: left;
+    margin-left: 114px;
+
+}
+
+
+.gif{
+
+    text-align: right;
+    margin: -290px 100px 53px;
+    padding-left: 122px;
+}
+
+
+.bless{
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: #000;
+    
+  
+}
+.para{
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: #000;
+
+}
+@media (max-width:952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+
+    }
+}
+@media (max-width:858px){
+    .checkbtn{
+        display: block;
+
+    }
+    ul{
+        position: fixed;
+        width: 87%;
+        height: 100%;
+        background: #4d4759;
+        top: 80px;
+         left: -100%;
+         text-align: center;
+         transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    nav ul li a{
+        font-size: 20px;
+
+    }
+    a:hover, a.MenstrualAwareness{
+        background: none;
+        color: #a1a5aa;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+@media (max-width:644px){
+    .gif{
+        margin: -32px 88px 10px;
+    }
+}
